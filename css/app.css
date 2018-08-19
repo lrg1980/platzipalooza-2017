@@ -103,5 +103,24 @@ h1, h2, h3, h4, h5, h6, button {
     max-height: none !important;
 }
 
+#tickets-container {
+    padding: 1em 0;
+    color: #161742;
+    background-color: #f6e15f;
+}
 
+.pricing-table {
+    border: 1px solid #161742;
+    font-family: 'Ravi Prakash', cursive;
+    font-size: 20px;
+}
+.pricing-table .description {
+    font-size: 18px;
+}
+.pricing-table a.button {
+    font-family: 'Bree Serif', serif;
+}
 
+.pricing-table div:nth-child(even){
+    color: red;
+}
