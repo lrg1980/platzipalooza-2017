@@ -117,10 +117,26 @@ h1, h2, h3, h4, h5, h6, button {
 .pricing-table .description {
     font-size: 18px;
 }
+
 .pricing-table a.button {
     font-family: 'Bree Serif', serif;
 }
 
 .pricing-table div:nth-child(even){
     color: red;
+}
+
+#info-container {
+    background-color: #161742;
+    color: white;
+    padding: 1em 0;
+}
+
+#info-container .info-map iframe {
+    width: 90%;
+    height: 80%;
+}
+
+#novedades-container {
+    color: white;
 }
