@@ -12,234 +12,183 @@
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
-    <!-- SOCIAL -->
+
+    <!-- Menu OffCanvas -->
+      <div class="off-canvas-wrapper">
+        <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+          <div id="offCanvas" class="off-canvas position-left" data-off-canvas>
+            <nav data-magellan>
+              <ul class="vertical menu" data-drilldown>
+                <li><a href="#tickets-container"><i class="fi-ticket"></i> Tickets</a></li>
+                <li>
+                  <a href="#lineup-container"><i class="fi-music"></i> LineUp</a>
+                  <ul id="submenu-container" class="menu">
+                    <li><a data-toggle-dia="panelViernes" href="#lineup-container" >Viernes</a></li>
+                    <li><a data-toggle-dia="panelSabado"  href="#lineup-container" >Sábados</a></li>
+                    <li><a data-toggle-dia="panelDomingo" href="#lineup-container" >Domingos</a></li>
+                  </ul>
+                </li>
+                <li><a href="#info-container"><i class="fi-info"></i> Información</a></li>
+                <li><a href="#novedades-container"><i class="fi-check"></i> Suscríbete</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="off-canvas-content" data-off-canvas-content>
+                  <!-- SOCIAL -->
       <section id="social-container">
-        <div class="row align-center text-center">
-          <div class="small-1  column"><a href="#" target="_blank"><i class="fi-social-facebook"></i></a></div>
-          <div class="small-1  column"><a href="#" target="_blank"><i class="fi-social-twitter"></i></a></div>
-          <div class="small-1  column"><a href="#" target="_blank"><i class="fi-social-instagram"></i></a></div>
-          <div class="small-1  column"><a href="#" target="_blank"><i class="fi-social-youtube"></i></a></div>
-        </div>    
-      </section>
-    <!-- /SOCIAL-->  
-
-    <!-- LOGO -->
-      <div id="logo-container">
-        <div class="callout text-center">
-          <h1>Platzipalooza 2017</h1>
+          <div class="row align-center text-center">
+            <div class="small-1  column"><a href="#" target="_blank"><i class="fi-social-facebook"></i></a></div>
+            <div class="small-1  column"><a href="#" target="_blank"><i class="fi-social-twitter"></i></a></div>
+            <div class="small-1  column"><a href="#" target="_blank"><i class="fi-social-instagram"></i></a></div>
+            <div class="small-1  column"><a href="#" target="_blank"><i class="fi-social-youtube"></i></a></div>
+          </div>    
+        </section>
+      <!-- /SOCIAL-->  
+  
+      <!-- LOGO -->
+        <div id="logo-container">
+          <div class="callout text-center">
+            <h1>Platzipalooza 2017</h1>
+          </div>
         </div>
-      </div>
-    <!-- /LOGO -->
-
-    <!-- BARRA DE NAVEGACIÓN -->
-      <section id="scrollSticky"data-sticky-container>
-        <div class="data-sticky" data-sticky data-options="marginTop:0;" data-sticky-on="small" data-top-anchor="scrollSticky">
-          <nav id="menu-container" data-magellan>    
-            <ul class="menu icon-top dropdown align-spaced" data-dropdown-menu>
-              <li><a href="#tickets-container"><i class="fi-ticket"></i> Tickets</a></li>
-              <li>
-                <a href="#lineup-container"><i class="fi-music"></i> LineUp</a>
-                <ul id="submenu-container" class="menu">
-                  <li><a data-toggle-dia="panelViernes" href="#lineup-container" >Viernes</a></li>
-                  <li><a data-toggle-dia="panelSabado"  href="#lineup-container" >Sábados</a></li>
-                  <li><a data-toggle-dia="panelDomingo" href="#lineup-container" >Domingos</a></li>
+      <!-- /LOGO -->
+  
+      <!-- BARRA DE NAVEGACIÓN -->
+        <section id="scrollSticky"data-sticky-container>
+          <div class="data-sticky" data-sticky id="sticky" data-options="marginTop:0;" data-sticky-on="small" data-top-anchor="scrollSticky">
+            <nav id="menu-container" data-magellan>    
+                <ul class="menu align-spaced show-for-small-only">
+                  <li><a href="#" data-toggle="offCanvas">Menu</a></li>
                 </ul>
-              </li>
-              <li><a href="#info-container"><i class="fi-info"></i> Información</a></li>
-              <li><a href="#novedades-container"><i class="fi-check"></i> Suscríbete</a></li>
-            </ul>
-          </nav>
-        </div>
-      </section>
-    <!-- /BARRA DE NAVEGACIÓN -->
-    
-    <!--CONTENIDO-->
-    <!-- TICKETS -->
-      <section id="tickets-action">
-        <div class="callout large text-center">
-          <a href="#">
-            <button class="large hollow button">Comprar tickets</button>
-          </a>
-        </div>
-      </section>
-    <!-- /TICKETS -->
-
-    <!-- LINEUP -->
-      <section id="lineup-container" data-magellan-target="lineup-container">
-        <h3 class="text-center">LineUp</h3>
-        <ul class="tabs text-center" data-tabs id="lineup-tabs">
-          <li class="tabs-title is-active">
-            <a href="#panelViernes">Viernes</a>
-          </li>
-          <li class="tabs-title">
-              <a href="#panelSabado">Sábados</a>
-          </li>
-          <li class="tabs-title">
-              <a href="#panelDomingo">Domingos</a>
-          </li>
-        </ul>
-        <div class="tabs-content" data-tabs-content="lineup-tabs">
-          <div class="tabs-panel is-active" id="panelViernes">          
-            <div class="row">
-              <div class="small-12 medium-6 column">
-                <div class="orbit" data-orbit>
-                  <div class="orbit-wrapper">
-                    <div class="orbit-container">   
-                      <div class="orbit-slide"> 
-                          <img class="orbit-image" src="http://media.rock.com.ar/fotos/discos/000/011/617/original/andando-descalzo-20-anos-andando.png" alt="Space">
-                          <figcaption class="orbit-caption">Andando Descalzo - 20 años</figcaption>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="small-12 medium-6 column">
-                <div class="orbit-wrapper">
-                  <div class="orbit" data-orbit>
-                    <div class="orbit-container">   
-                      <div class="orbit-slide"> 
-                          <img class="orbit-image" src="https://www.cmtv.com.ar/tapas-cd/andandodescalzoelcaminosing.jpg" alt="AndandoDescalzo">
-                          <figcaption class="orbit-caption">Andando Descalzo - El Camino</figcaption>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="small-12 medium-6 column">
-                <div class="orbit" data-orbit>
-                  <div class="orbit-wrapper">
-                    <div class="orbit-container">   
-                      <div class="orbit-slide"> 
-                          <img class="orbit-image" src="http://media.rock.com.ar/fotos/discos/000/011/617/original/andando-descalzo-20-anos-andando.png" alt="Space">
-                          <figcaption class="orbit-caption">Andando Descalzo - 20 años</figcaption>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="small-12 medium-6 column">
-                <div class="orbit-wrapper">
-                  <div class="orbit" data-orbit>
-                    <div class="orbit-container">   
-                      <div class="orbit-slide"> 
-                          <img class="orbit-image" src="https://www.cmtv.com.ar/tapas-cd/andandodescalzoelcaminosing.jpg" alt="AndandoDescalzo">
-                          <figcaption class="orbit-caption">Andando Descalzo - El Camino</figcaption>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="small-12 medium-6 column">
-                <div class="orbit" data-orbit>
-                  <div class="orbit-wrapper">
-                    <div class="orbit-container">   
-                      <div class="orbit-slide"> 
-                          <img class="orbit-image" src="http://media.rock.com.ar/fotos/discos/000/011/617/original/andando-descalzo-20-anos-andando.png" alt="Space">
-                          <figcaption class="orbit-caption">Andando Descalzo - 20 años</figcaption>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="small-12 medium-6 column">
-                <div class="orbit-wrapper">
-                  <div class="orbit" data-orbit>
-                    <div class="orbit-container">   
-                      <div class="orbit-slide"> 
-                          <img class="orbit-image" src="https://www.cmtv.com.ar/tapas-cd/andandodescalzoelcaminosing.jpg" alt="AndandoDescalzo">
-                          <figcaption class="orbit-caption">Andando Descalzo - El Camino</figcaption>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>        
-            </div>
+              <ul class="menu icon-top dropdown align-spaced show-for-medium" data-dropdown-menu>
+                <li><a href="#tickets-container"><i class="fi-ticket"></i> Tickets</a></li>
+                <li>
+                  <a href="#lineup-container"><i class="fi-music"></i> LineUp</a>
+                  <ul id="submenu-container" class="menu">
+                    <li><a data-toggle-dia="panelViernes" href="#lineup-container" >Viernes</a></li>
+                    <li><a data-toggle-dia="panelSabado"  href="#lineup-container" >Sábados</a></li>
+                    <li><a data-toggle-dia="panelDomingo" href="#lineup-container" >Domingos</a></li>
+                  </ul>
+                </li>
+                <li><a href="#info-container"><i class="fi-info"></i> Información</a></li>
+                <li><a href="#novedades-container"><i class="fi-check"></i> Suscríbete</a></li>
+              </ul>
+            </nav>
           </div>
-          <div class="tabs-panel" id="panelSabado">
-            <div class="row">
-              <div class="small-12 medium-6 column">
-                <div class="orbit-wrapper">
-                  <div class="orbit" data-orbit>
-                    <div class="orbit-container">   
-                      <div class="orbit-slide"> 
-                          <img class="orbit-image" src="https://mlstaticquic-a.akamaihd.net/S_734786-MLU25606027429_052017-O.jpg" alt="Space">
-                          <figcaption class="orbit-caption">Soda Stereo - Me verás volver | HITS +</figcaption>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div> 
-              <div class="small-12 medium-6 column">
-                <div class="orbit-wrapper">
-                  <div class="orbit" data-orbit>
-                    <div class="orbit-container">   
-                      <div class="orbit-slide"> 
-                          <img class="orbit-image" src="http://reproductor.cienradios.com.ar/player/Player/ShowImageMobile/772/500" alt="Space">
-                          <figcaption class="orbit-caption">Soda Stereo y Artistas relacionados</figcaption>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="small-12 medium-6 column">
-                <div class="orbit-wrapper">
-                  <div class="orbit" data-orbit>
-                    <div class="orbit-container">   
-                      <div class="orbit-slide"> 
-                          <img class="orbit-image" src="https://mlstaticquic-a.akamaihd.net/S_734786-MLU25606027429_052017-O.jpg" alt="Space">
-                          <figcaption class="orbit-caption">Soda Stereo - Me verás volver | HITS +</figcaption>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="small-12 medium-6 column">
-                <div class="orbit-wrapper">
-                  <div class="orbit" data-orbit>
-                    <div class="orbit-container">   
-                      <div class="orbit-slide"> 
-                          <img class="orbit-image" src="http://reproductor.cienradios.com.ar/player/Player/ShowImageMobile/772/500" alt="Space">
-                          <figcaption class="orbit-caption">Soda Stereo y Artistas relacionados</figcaption>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div> 
-              <div class="small-12 medium-6 column">
-                <div class="orbit-wrapper">
-                  <div class="orbit" data-orbit>
-                    <div class="orbit-container">   
-                      <div class="orbit-slide"> 
-                          <img class="orbit-image" src="https://mlstaticquic-a.akamaihd.net/S_734786-MLU25606027429_052017-O.jpg" alt="Space">
-                          <figcaption class="orbit-caption">Soda Stereo - Me verás volver | HITS +</figcaption>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="small-12 medium-6 column">
-                <div class="orbit-wrapper">
-                  <div class="orbit" data-orbit>
-                    <div class="orbit-container">   
-                      <div class="orbit-slide"> 
-                          <img class="orbit-image" src="http://reproductor.cienradios.com.ar/player/Player/ShowImageMobile/772/500" alt="Space">
-                          <figcaption class="orbit-caption">Soda Stereo y Artistas relacionados</figcaption>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+        </section>
+      <!-- /BARRA DE NAVEGACIÓN -->
+      
+      <!--CONTENIDO-->
+      <!-- TICKETS -->
+        <section id="tickets-action">
+          <div class="callout large text-center">
+            <a href="#tickets-container" data-magellan="tickets-container">
+              <button class="large hollow button">Comprar tickets</button>
+            </a>
           </div>
-          <div class="tabs-panel" id="panelDomingo">
-            <div class="row">
+        </section>
+      <!-- /TICKETS -->
+  
+      <!-- LINEUP -->
+        <section id="lineup-container" data-magellan-target="lineup-container">
+          <h3 class="text-center">LineUp</h3>
+          <ul class="tabs text-center" data-tabs id="lineup-tabs">
+            <li class="tabs-title is-active">
+              <a href="#panelViernes">Viernes</a>
+            </li>
+            <li class="tabs-title">
+                <a href="#panelSabado">Sábados</a>
+            </li>
+            <li class="tabs-title">
+                <a href="#panelDomingo">Domingos</a>
+            </li>
+          </ul>
+          <div class="tabs-content" data-tabs-content="lineup-tabs">
+            <div class="tabs-panel is-active" id="panelViernes">          
+              <div class="row">
+                <div class="small-12 medium-6 column">
+                  <div class="orbit" data-orbit>
+                    <div class="orbit-wrapper">
+                      <div class="orbit-container">   
+                        <div class="orbit-slide"> 
+                            <img class="orbit-image" src="http://media.rock.com.ar/fotos/discos/000/011/617/original/andando-descalzo-20-anos-andando.png" alt="Space">
+                            <figcaption class="orbit-caption">Andando Descalzo - 20 años</figcaption>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <div class="small-12 medium-6 column">
                   <div class="orbit-wrapper">
                     <div class="orbit" data-orbit>
                       <div class="orbit-container">   
                         <div class="orbit-slide"> 
-                          <img class="orbit-image" src="http://www.cmtv.com.ar/tapas-cd/charlyobras.jpg" alt="Space">
-                          <figcaption class="orbit-caption">Charly García | Obras Cumbres</figcaption>
+                            <img class="orbit-image" src="https://www.cmtv.com.ar/tapas-cd/andandodescalzoelcaminosing.jpg" alt="AndandoDescalzo">
+                            <figcaption class="orbit-caption">Andando Descalzo - El Camino</figcaption>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="small-12 medium-6 column">
+                  <div class="orbit" data-orbit>
+                    <div class="orbit-wrapper">
+                      <div class="orbit-container">   
+                        <div class="orbit-slide"> 
+                            <img class="orbit-image" src="http://media.rock.com.ar/fotos/discos/000/011/617/original/andando-descalzo-20-anos-andando.png" alt="Space">
+                            <figcaption class="orbit-caption">Andando Descalzo - 20 años</figcaption>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="small-12 medium-6 column">
+                  <div class="orbit-wrapper">
+                    <div class="orbit" data-orbit>
+                      <div class="orbit-container">   
+                        <div class="orbit-slide"> 
+                            <img class="orbit-image" src="https://www.cmtv.com.ar/tapas-cd/andandodescalzoelcaminosing.jpg" alt="AndandoDescalzo">
+                            <figcaption class="orbit-caption">Andando Descalzo - El Camino</figcaption>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="small-12 medium-6 column">
+                  <div class="orbit" data-orbit>
+                    <div class="orbit-wrapper">
+                      <div class="orbit-container">   
+                        <div class="orbit-slide"> 
+                            <img class="orbit-image" src="http://media.rock.com.ar/fotos/discos/000/011/617/original/andando-descalzo-20-anos-andando.png" alt="Space">
+                            <figcaption class="orbit-caption">Andando Descalzo - 20 años</figcaption>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="small-12 medium-6 column">
+                  <div class="orbit-wrapper">
+                    <div class="orbit" data-orbit>
+                      <div class="orbit-container">   
+                        <div class="orbit-slide"> 
+                            <img class="orbit-image" src="https://www.cmtv.com.ar/tapas-cd/andandodescalzoelcaminosing.jpg" alt="AndandoDescalzo">
+                            <figcaption class="orbit-caption">Andando Descalzo - El Camino</figcaption>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>        
+              </div>
+            </div>
+            <div class="tabs-panel" id="panelSabado">
+              <div class="row">
+                <div class="small-12 medium-6 column">
+                  <div class="orbit-wrapper">
+                    <div class="orbit" data-orbit>
+                      <div class="orbit-container">   
+                        <div class="orbit-slide"> 
+                            <img class="orbit-image" src="https://mlstaticquic-a.akamaihd.net/S_734786-MLU25606027429_052017-O.jpg" alt="Space">
+                            <figcaption class="orbit-caption">Soda Stereo - Me verás volver | HITS +</figcaption>
                         </div>
                       </div>
                     </div>
@@ -250,8 +199,8 @@
                     <div class="orbit" data-orbit>
                       <div class="orbit-container">   
                         <div class="orbit-slide"> 
-                          <img class="orbit-image" src="http://img-tmk.tematika.com/tapas/sitio/501970g0.jpg" alt="Insconsciente Colectivo">
-                          <figcaption class="orbit-caption">Charly García | Inconciente Colectivo</figcaption>
+                            <img class="orbit-image" src="http://reproductor.cienradios.com.ar/player/Player/ShowImageMobile/772/500" alt="Space">
+                            <figcaption class="orbit-caption">Soda Stereo y Artistas relacionados</figcaption>
                         </div>
                       </div>
                     </div>
@@ -262,8 +211,8 @@
                     <div class="orbit" data-orbit>
                       <div class="orbit-container">   
                         <div class="orbit-slide"> 
-                          <img class="orbit-image" src="http://www.cmtv.com.ar/tapas-cd/charlyobras.jpg" alt="Space">
-                          <figcaption class="orbit-caption">Charly García | Obras Cumbres</figcaption>
+                            <img class="orbit-image" src="https://mlstaticquic-a.akamaihd.net/S_734786-MLU25606027429_052017-O.jpg" alt="Space">
+                            <figcaption class="orbit-caption">Soda Stereo - Me verás volver | HITS +</figcaption>
                         </div>
                       </div>
                     </div>
@@ -274,8 +223,8 @@
                     <div class="orbit" data-orbit>
                       <div class="orbit-container">   
                         <div class="orbit-slide"> 
-                          <img class="orbit-image" src="http://img-tmk.tematika.com/tapas/sitio/501970g0.jpg" alt="Insconsciente Colectivo">
-                          <figcaption class="orbit-caption">Charly García | Inconciente Colectivo</figcaption>
+                            <img class="orbit-image" src="http://reproductor.cienradios.com.ar/player/Player/ShowImageMobile/772/500" alt="Space">
+                            <figcaption class="orbit-caption">Soda Stereo y Artistas relacionados</figcaption>
                         </div>
                       </div>
                     </div>
@@ -286,97 +235,182 @@
                     <div class="orbit" data-orbit>
                       <div class="orbit-container">   
                         <div class="orbit-slide"> 
+                            <img class="orbit-image" src="https://mlstaticquic-a.akamaihd.net/S_734786-MLU25606027429_052017-O.jpg" alt="Space">
+                            <figcaption class="orbit-caption">Soda Stereo - Me verás volver | HITS +</figcaption>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="small-12 medium-6 column">
+                  <div class="orbit-wrapper">
+                    <div class="orbit" data-orbit>
+                      <div class="orbit-container">   
+                        <div class="orbit-slide"> 
+                            <img class="orbit-image" src="http://reproductor.cienradios.com.ar/player/Player/ShowImageMobile/772/500" alt="Space">
+                            <figcaption class="orbit-caption">Soda Stereo y Artistas relacionados</figcaption>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tabs-panel" id="panelDomingo">
+              <div class="row">
+                  <div class="small-12 medium-6 column">
+                    <div class="orbit-wrapper">
+                      <div class="orbit" data-orbit>
+                        <div class="orbit-container">   
+                          <div class="orbit-slide"> 
                             <img class="orbit-image" src="http://www.cmtv.com.ar/tapas-cd/charlyobras.jpg" alt="Space">
                             <figcaption class="orbit-caption">Charly García | Obras Cumbres</figcaption>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="small-12 medium-6 column">
+                    <div class="orbit-wrapper">
+                      <div class="orbit" data-orbit>
+                        <div class="orbit-container">   
+                          <div class="orbit-slide"> 
+                            <img class="orbit-image" src="http://img-tmk.tematika.com/tapas/sitio/501970g0.jpg" alt="Insconsciente Colectivo">
+                            <figcaption class="orbit-caption">Charly García | Inconciente Colectivo</figcaption>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="small-12 medium-6 column">
-                  <div class="orbit-wrapper">
-                    <div class="orbit" data-orbit>
-                      <div class="orbit-container">   
-                        <div class="orbit-slide"> 
-                          <img class="orbit-image" src="http://img-tmk.tematika.com/tapas/sitio/501970g0.jpg" alt="Insconsciente Colectivo">
-                          <figcaption class="orbit-caption">Charly García | Inconciente Colectivo</figcaption>
+                  <div class="small-12 medium-6 column">
+                    <div class="orbit-wrapper">
+                      <div class="orbit" data-orbit>
+                        <div class="orbit-container">   
+                          <div class="orbit-slide"> 
+                            <img class="orbit-image" src="http://www.cmtv.com.ar/tapas-cd/charlyobras.jpg" alt="Space">
+                            <figcaption class="orbit-caption">Charly García | Obras Cumbres</figcaption>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-          </div>
-        </div>
-      </section>
-    <!-- /LINEUP -->
-    
-    <!-- COMPRAR TICKETS -->
-      <section id="tickets-container" data-magellan-target="tickets-container">
-        <h3 class="text-center">Comprar tickets</h3>
-        <div class="row">
-          <div class="column small-10 medium-4">
-            <ul class="pricing-table">
-              <li class="title">PLATA</li>
-              <li class="price">$260</li>
-              <li class="description">Acceso 2 días</li>
-              <li class="text-center">X</li>
-              <li>Estacionamiento</li>
-              <li><a class="button" href="#">Pagar ahora</a></li>
-            </ul>                
-          </div>
-          <div class="column small-10 medium-4">
-            <ul class="pricing-table">
-              <li class="title">GOLD</li>
-              <li class="price">$300</li>
-              <li class="description">Acceso 3 días</li>
-              <li>Acceso VIP</li>
-              <li>Estacionamiento</li>
-              <li><a class="button" href="#">Pagar ahora</a></li>
-            </ul>                
-          </div>     
-          <div class="column small-10 medium-4">
-            <ul class="pricing-table">
-              <li class="title">BRONCE</li>
-              <li class="price">$200</li>
-              <li class="description">Acceso 1 día</li>
-              <li class="text-center">X</li>
-              <li class="text-center">X</li>
-              <li><a class="button" href="#">Pagar ahora</a></li>
-            </ul>                
-          </div>
-        </div>
-      </section>
-    <!-- /COMPRAR TICKETS -->
-    
-    <!-- SUSCRIBETE -->
-    <section id="novedades-container" data-magellan-target="novedades-container">
-      <h3 class="text-center">Novedades</h3>
-      <h4 class="text-center"><small>Dejanos tu correo y recibe todas las últimas novedades</small></h4>
-        <form action="" method="" novalidate data-abide>
-            <div data-abide-error  style="display: none;" class="row columns small-12 medium-6 text-center error-container">
-              <p><i class="fi-alert"></i> Ingresó un correo Electrónico no válido</p></div>
-          <div class="row columns small-12 medium-6">
-            <div class="input-group">
-                <span class="input-group-label"><i class="fi-mail"></i></span>
-                <input type="email" name="email" class="input-group-field" placeholder="Email | Correo Electrónico " required>
-                <div class="input-group-button">
-                  <input type="submit" class="button" value="Suscribirse!">
+                  <div class="small-12 medium-6 column">
+                    <div class="orbit-wrapper">
+                      <div class="orbit" data-orbit>
+                        <div class="orbit-container">   
+                          <div class="orbit-slide"> 
+                            <img class="orbit-image" src="http://img-tmk.tematika.com/tapas/sitio/501970g0.jpg" alt="Insconsciente Colectivo">
+                            <figcaption class="orbit-caption">Charly García | Inconciente Colectivo</figcaption>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="small-12 medium-6 column">
+                    <div class="orbit-wrapper">
+                      <div class="orbit" data-orbit>
+                        <div class="orbit-container">   
+                          <div class="orbit-slide"> 
+                              <img class="orbit-image" src="http://www.cmtv.com.ar/tapas-cd/charlyobras.jpg" alt="Space">
+                              <figcaption class="orbit-caption">Charly García | Obras Cumbres</figcaption>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="small-12 medium-6 column">
+                    <div class="orbit-wrapper">
+                      <div class="orbit" data-orbit>
+                        <div class="orbit-container">   
+                          <div class="orbit-slide"> 
+                            <img class="orbit-image" src="http://img-tmk.tematika.com/tapas/sitio/501970g0.jpg" alt="Insconsciente Colectivo">
+                            <figcaption class="orbit-caption">Charly García | Inconciente Colectivo</figcaption>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
             </div>
           </div>
-      </form>
-    </section>
-    <!-- /SUSCRIBETE -->
-    <!-- INFORMACIÓN -->
-      <section id="info-container" data-magellan-target="info-container">
-        <h3 class="text-center">INFORMACIÓN</h3>
-            <div class="info-map text-center" data-interchange="[assets/maps/map_small.html, small], [assets/maps/map.html, medium]"></div>
+        </section>
+      <!-- /LINEUP -->
+      
+      <!-- COMPRAR TICKETS -->
+        <section id="tickets-container" data-magellan-target="tickets-container">
+          <h3 class="text-center">Comprar tickets</h3>
+          <div class="row">
+            <div class="column small-10 medium-4">
+              <ul class="pricing-table">
+                <li class="title">PLATA</li>
+                <li class="price">$260</li>
+                <li class="description">Acceso 2 días</li>
+                <li class="text-center">X</li>
+                <li>Estacionamiento</li>
+                <li><a class="button" href="#">Pagar ahora</a></li>
+              </ul>                
+            </div>
+            <div class="column small-10 medium-4">
+              <ul class="pricing-table">
+                <li class="title">GOLD</li>
+                <li class="price">$300</li>
+                <li class="description">Acceso 3 días</li>
+                <li>Acceso VIP</li>
+                <li>Estacionamiento</li>
+                <li><a class="button" href="#">Pagar ahora</a></li>
+              </ul>                
+            </div>     
+            <div class="column small-10 medium-4">
+              <ul class="pricing-table">
+                <li class="title">BRONCE</li>
+                <li class="price">$200</li>
+                <li class="description">Acceso 1 día</li>
+                <li class="text-center">X</li>
+                <li class="text-center">X</li>
+                <li><a class="button" href="#">Pagar ahora</a></li>
+              </ul>                
+            </div>
+          </div>
+        </section>
+      <!-- /COMPRAR TICKETS -->
+      
+      <!-- SUSCRIBETE -->
+      <section id="novedades-container" data-magellan-target="novedades-container">
+        <h3 class="text-center">Novedades</h3>
+        <h4 class="text-center"><small>Dejanos tu correo y recibe todas las últimas novedades</small></h4>
+          <form action="https://formspree.io/newsletter@binweb.net" method="POST" novalidate data-abide>
+              <div data-abide-error  style="display: none;" class="row columns small-12 medium-6 text-center error-container">
+                <p><i class="fi-alert"></i> Ingresó un correo Electrónico no válido</p></div>
+            <div class="row columns small-12 medium-6">
+              <div class="input-group">
+                  <span class="input-group-label"><i class="fi-mail"></i></span>
+                  <input type="email" name="email" class="input-group-field" placeholder="Email | Correo Electrónico " required>
+                  <div class="input-group-button">
+                    <input type="submit" class="button" value="Suscribirse!">
+                  </div>
+              </div>
+            </div>
+        </form>
       </section>
-    <!-- /INFORMACIÓN -->
-    <!-- /CONTENIDO -->
-    <!-- PIE -->
-    <!-- /PIE -->
+      <!-- /SUSCRIBETE -->
+      <!-- INFORMACIÓN -->
+        <section id="info-container" data-magellan-target="info-container">
+          <h3 class="text-center">INFORMACIÓN</h3>
+              <div class="info-map text-center" data-interchange="[assets/maps/map_small.html, small], [assets/maps/map.html, medium]"></div>
+        </section>
+      <!-- /INFORMACIÓN -->
+      <!-- /CONTENIDO -->
+      
+      <!-- PIE -->
+      <section id="footer">
+        <h5 class="text-center">Realizado por <a href="mailto:info@binweb.net" class="footerLink">Binweb Online Solutions</a>. &copy; 2017. Todos los derechos reservados.</h5>
+      </section>
+      <!-- /PIE -->
+          </div>
+        </div>
+      </div>
+    <!-- /Menu OffCanvas -->
+
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>

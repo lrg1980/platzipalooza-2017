@@ -24,6 +24,7 @@ h1, h2, h3, h4, h5, h6, button, input[type="submit"] {
 #menu-container li a {
     color:white;
     font-family: 'Bree Serif', serif;
+    text-transform: uppercase;
 }
 
 #submenu-container {
@@ -160,4 +161,28 @@ h1, h2, h3, h4, h5, h6, button, input[type="submit"] {
 
 .data-sticky {
     z-index: 200;
+}
+
+#offCanvas,
+#offCanvas li a {
+    background-color: black;
+    color: white;
+    font-family: 'Bree Serif', serif;
+}
+
+#offCanvas .is-drilldown-submenu-parent > a::after {
+    border-color: transparent transparent transparent white;
+}
+
+#offCanvas .drilldown .js-drilldown-back > a::before {
+    border-color: transparent white transparent transparent;
+}
+
+#footer h5 {
+    color:white;
+    background-color: ;
+}
+#footer .footerLink {
+    color:white;
+    text-decoration: none;
 }
